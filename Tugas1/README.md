@@ -1,2 +1,2 @@
-# MineSweeper
+# MineSweeper Game
 Tugas 1
