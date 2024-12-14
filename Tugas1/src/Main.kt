@@ -1,12 +1,19 @@
 import kotlin.random.Random
 
 fun main() {
-    println("Minesweeper !!!")
+    println("\n" +
+            "  __  __ _____ _   _ ______  _______          ________ ______ _____  ______ _____  \n" +
+            " |  \\/  |_   _| \\ | |  ____|/ ____\\ \\        / /  ____|  ____|  __ \\|  ____|  __ \\ \n" +
+            " | \\  / | | | |  \\| | |__  | (___  \\ \\  /\\  / /| |__  | |__  | |__) | |__  | |__) |\n" +
+            " | |\\/| | | | | . ` |  __|  \\___ \\  \\ \\/  \\/ / |  __| |  __| |  ___/|  __| |  _  / \n" +
+            " | |  | |_| |_| |\\  | |____ ____) |  \\  /\\  /  | |____| |____| |    | |____| | \\ \\ \n" +
+            " |_|  |_|_____|_| \\_|______|_____/    \\/  \\/   |______|______|_|    |______|_|  \\_\\\n" +
+            "                                                                                   \n")
     var pilih = pilih("Mulai", "Keluar", 1)
     while ((pilih[0] == 1 && (pilih[1] == 1) || pilih[1] == 2)) {
         val mine1 = buatMine(1)
         val mine2 = buatMine(2)
-        printMine(mine2)
+//        printMine(mine2)   //ngecheat
         var mineDibuka = 0
         var gameOver = false
         var status = "Mulai"
