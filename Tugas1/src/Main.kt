@@ -10,7 +10,7 @@ fun main() {
             " |_|  |_|_____|_| \\_|______|_____/    \\/  \\/   |______|______|_|    |______|_|  \\_\\\n"
     )
     var pilih = pilih("Mulai", "Keluar", 1)
-    while ((pilih[0] == 1 && (pilih[1] == 1) || pilih[1] == 2)) {
+    while (pilih[0] == 1) {
         val mine1 = buatMine(1)
         val mine2 = buatMine(2)
 //        printMine(mine2)   //ngecheat
@@ -52,10 +52,9 @@ fun main() {
             println("Hoki doang itu")
         }
         pilih = pilih("Main lagi", "Dah ah cape", 2)
-        if(pilih[0] == 2 && pilih[1] == 2) {
+        if(pilih[0] == 2) {
             printMine(mine2)
             pilih = pilih("Main lagi", "Keluar", 1)
-
         }
     }
     if (pilih[1] == 2)
